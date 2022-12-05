@@ -1,0 +1,45 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-text-color);
+  letter-spacing: 0.03em;
+}
+
+h2 {
+  display: none;
+}
+.is-active {
+  display: block;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.img {
+  width: 100%;
+  min-width: 100%;
+  height: auto;
+}

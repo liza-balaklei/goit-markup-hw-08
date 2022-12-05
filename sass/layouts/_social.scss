@@ -1,0 +1,16 @@
+.footer .container {
+    display: flex;
+    align-items: baseline;
+    gap: 70px;
+  }
+  
+  .social-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 1.1;
+    color: var(--white-color);
+    display: flex;
+    margin-bottom: 20px;
+  
+    text-transform: uppercase;
+  }
