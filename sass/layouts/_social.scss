@@ -1,9 +1,36 @@
 .footer .container {
-    display: flex;
-    align-items: baseline;
-    gap: 70px;
+  align-items: center;
+    // align-items: baseline;
+    // gap: 70px;
+    @include desktop-max {
+      display: flex;
+      flex-direction: column;
+    }
+    @include desktop {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
   }
+  .logo-contacts {
+    @include tablet {
+      display: flex;
+    }
+  }
+}
   
+  .footer-contacts {
+    margin-bottom: 60px;
+    @include desktop-max {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    @include desktop {
+      margin-bottom: 0;
+      margin-right: 94px;
+    }
+    
+  }
   .social-title {
     font-family: "Roboto", sans-serif;
     font-size: 14px;

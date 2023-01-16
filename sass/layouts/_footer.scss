@@ -3,6 +3,22 @@
     padding-bottom: 60px;
   
     background-color: var(--title-bcg-color);
+    @include desktop {
+      display: flex;
+    }
+    &-logo {
+      @include desktop-max {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+      }
+      @include tablet {
+        margin-right: 165px;
+      }
+      @include desktop {
+        margin-right: 70px;
+      }
+    }
     &-mail,
     &-tel {
     color: rgba(255, 255, 255, 0.6);
@@ -17,14 +33,18 @@
     font-style: normal;
     font-size: 14px;
     line-height: 1.7;
-    margin-top: 20px;
+    margin-top: 28px;
   }
 
   .contacts {
     margin-top: 0;
-    display: block;
+    margin-bottom: 60px;
+    // display: block;
+    @include desktop {
+      margin-right: 94px;
+    }
     &-list {
-      margin-top: 9px;
+      margin-top: 12px;
     }
   }
 

@@ -24,6 +24,12 @@
   color: var(--accent-color);
 }
 
+// .navigation {
+//   @media screen and (max-width: 479px) {
+//     display: none;
+//   }
+// }
+
 .navigation__list {
   display: flex;
   & li {
@@ -39,6 +45,9 @@
   display: flex;
   margin-left: auto;
   justify-content: flex-end;
+  // @media screen and (max-width: 479px) {
+  //   display: none;
+  // }
 }
 
 .navigation__cont {
