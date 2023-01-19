@@ -4,6 +4,11 @@
       flex-direction: column;
       align-items: center;
     }
+    @include desktop {
+      display: flex;
+      flex-direction: column;
+      
+    }
   }
   .online-title {
     font-weight: 700;
@@ -28,7 +33,6 @@
   }
   
   .online-input {
-    // width: 358px;
     height: 50px;
     padding-left: 15px;
     border: 1px solid rgba(255, 255, 255, 0.3);

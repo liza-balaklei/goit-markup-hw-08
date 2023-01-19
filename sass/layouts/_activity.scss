@@ -1,4 +1,7 @@
 .activity {
+  @include desktop-max {
+    display: none;
+  }
   padding-bottom: 94px;
   margin-left: auto;
   margin-right: auto;
