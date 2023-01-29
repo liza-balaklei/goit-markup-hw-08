@@ -2,20 +2,34 @@
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: var(--title-bcg-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  url(../images/Img-bg.jpg);
+  background-image: var(--bg-gradient), url(../images/hero-bg-mobile.jpg);
   align-items: center;
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @include retina {
+    background-image:  var(--bg-gradient), url(../images/hero-bg-mobile-2x.jpg);
+  }
   
-  @media screen and (min-width: 1200px) {
+  @include tablet {
+    background-image: var(--bg-gradient), url(../images/hero-bg-tablet.jpg);
+    @include retina {
+    background-image:  var(--bg-gradient), url(../images/hero-bg-tablet-2x.jpg);
+    }
+  }
+  
+  @include desktop {
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
+    background-image: var(--bg-gradient), url(../images/hero-bg-desctop.jpg);
+    @include retina {
+    background-image:  var(--bg-gradient), url(../images/hero-bg-desctop-2x.jpg);
+    }
   }
+  
   &-item {
     margin-top: 0;
     margin-bottom: 30px;
@@ -50,9 +64,6 @@
       text-align: center;
     }
 }
-
-
-  
 
 
 
