@@ -27,11 +27,71 @@
     <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body>
+
+    <!--Верхня лінія-mobile-->
+<div class="menu-mobile is-hidden" data-menu>
+  <div class="container">
+  <button type="button" class="menu-close-mob" data-menu-close>
+    <svg class="menu-close-img" width="40" height="40">
+      <use href="./images/icons.svg#icon-close_40px"></use>
+    </svg>
+  </button>
+  <nav class="navigation-mob">
+    <ul class="navigation-mob__list list">
+      <li class="nav-mob__item">
+        <a href="./index.html" class="nav-mob__link">Студія</a>
+      </li>
+      <li class="nav-mob__item">
+        <a href="./portfolio.html" class="nav-mob__link">Портфоліо</a>
+      </li>
+      <li class="nav-mob__item">
+        <a href="./contacts.html" class="nav-mob__link">Контакти</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="nav-mob__contacts">
+    <div class="nav-mob__cont">
+      <a href="mailto:info@devstudio.com" class="nav-mob-tel">
+          <use href="./images/icons.svg#icon-message"></use></svg
+        >info@devstudio.com</a
+      >
+    </div>
+    <div class="nav-mob__cont">
+      <a href="tel:+380961111111" class="nav-mob-email">
+          <use href="./images/icons.svg#icon-smartphone"></use></svg
+        >+38 096 111 11 11</a
+      >
+    </div>
+  </div>
+  <div class="socials-mob">
+    <ul class="socials-mob__list list">
+      <li class="socials-mob__item">
+        <a href="" class="soc-mob__link">Instagram</a>
+      </li>
+      <li class="socials-mob__item">
+        <a href="" class="soc-mob__link">Twitter</a>
+      </li>
+      <li class="socials-mob__item">
+        <a href="" class="soc-mob__link">Facebook</a>
+      </li>
+      <li class="socials-mob__item">
+        <a href="" class="soc-mob__link">LinkedIn</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
     <!--Верхня лінія-->
 
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-item">
         <a class="logo header__logo header__logo--color-dark" href=""><span class="accent">Web</span>Studio</a>
+        <button type="button" class="header__menu-mob" data-menu-open>
+          <svg class="menu-mob" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu-mob"></use>
+          </svg>
+        </button>
 
         <nav class="navigation">
           <ul class="navigation__list list">
@@ -39,10 +99,10 @@
               <a href="./index.html" class="navigation__link current">Студія</a>
               <div class=""></div>
             </li>
-            <li class="item">
+            <li class="navigation__item">
               <a href="./portfolio.html" class="navigation__link">Портфоліо</a>
             </li>
-            <li class="item">
+            <li class="navigation__item">
               <a href="./contacts.html" class="navigation__link">Контакти</a>
             </li>
           </ul>
@@ -53,22 +113,23 @@
             <a href="mailto:info@devstudio.com" class="navigation__connect">
               <svg class="navigation__icon contacts-icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-message"></use></svg
-              >info@devstudio.com</a
-            >
+              >info@devstudio.com</a>
           </div>
           <div class="navigation__cont">
             <a href="tel:+380961111111" class="navigation__connect">
-              <svg class="navigation__icon" width="16" height="12">
+              <svg class="navigation__icon contacts-icon" width="12" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use></svg
-              >+38 096 111 11 11</a
-            >
+              >+38 096 111 11 11</a>
           </div>
         </div>
       </div>
-    </header> -->
+    </header>
     <main>
       <!--Шапка-->
 
+      
+
+      <!--Герой-->
       <section class="hero">
         <div class="container hero__wrap hero-wrap">
           <h1 class="hero__item hero-item">Ефективні рішення для вашого бізнесу</h1>
@@ -688,5 +749,6 @@
       AOS.init();
     </script>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
