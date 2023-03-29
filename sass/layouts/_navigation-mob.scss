@@ -1,12 +1,17 @@
-.menu-mobile {
+.mobile-menu {
     position: fixed;
     z-index: 1;
     background-color: var(--white-color);
     width: 100vw;
     height: 100vh;
-}
-.navigation-mob__list {
-    margin: 0;
+    @include tablet {
+        display: none;
+    }
+    &-modal {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
 }
 .nav-mob__item {
     font-weight: 500;
@@ -28,8 +33,11 @@
     text-decoration: none;
     color: #212121;
 }
+.current-mobile {
+    color: var(--accent-color);
+}
 .nav-mob__contacts {
-    margin-top: 306px;
+    margin-top: auto;
     margin-left: 40px;
     margin-bottom: 64px;
 }
@@ -37,7 +45,7 @@
 .nav-mob__cont:not(:last-child) {
     margin-bottom: 32px;
 }
-.nav-mob-tel {
+.nav-mob-email {
     font-weight: 500;
     font-size: 34px;
     line-height: 1.18;
@@ -46,7 +54,7 @@
     margin-bottom: 32px;
     text-decoration: none;
 }
-.nav-mob-email {
+.nav-mob-tel {
     font-weight: 500;
     font-size: 24px;
     line-height: 1.17;
@@ -94,6 +102,6 @@ margin-right: 20px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-      fill: var(--accent-color);
+    fill: var(--accent-color);
     }
 }

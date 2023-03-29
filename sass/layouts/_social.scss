@@ -12,12 +12,19 @@
     @include tablet {
       display: flex;
       justify-content: center;
+      margin-bottom: 60px;
+    }
+    @include desktop {
+      margin-bottom: 0;
     }
   }
 }
   
   .footer-contacts {
     margin-bottom: 60px;
+    @include tablet {
+      margin-bottom: 0;
+    }
     @include desktop-max {
       display: flex;
       flex-direction: column;
@@ -31,11 +38,13 @@
   }
   .social-title {
     font-family: "Roboto", sans-serif;
+    font-weight: 700;
     font-size: 14px;
-    line-height: 1.1;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
     color: var(--white-color);
-    display: flex;
-    margin-bottom: 20px;
-  
     text-transform: uppercase;
+
+    margin-bottom: 20px;    
   }
+  

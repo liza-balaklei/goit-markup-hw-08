@@ -13,7 +13,10 @@
     position: absolute;
     width: 450px;
     min-height: 609px;
-    @mixin desktop {
+    @include mobile-max {
+      width: 100%;
+    }
+    @include desktop {
       width: 528px;
       min-height: 581px;
     }

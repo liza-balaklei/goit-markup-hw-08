@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html>   
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
@@ -9,19 +9,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      referrerpolicy="no-referrer"/>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/main.min.css">
@@ -29,8 +26,8 @@
   <body>
 
     <!--Верхня лінія-mobile-->
-<div class="menu-mobile is-hidden" data-menu>
-  <div class="container">
+<div class="mobile-menu is-hidden" data-menu>
+  <div class="container mobile-menu-modal">
   <button type="button" class="menu-close-mob" data-menu-close>
     <svg class="menu-close-img" width="40" height="40">
       <use href="./images/icons.svg#icon-close_40px"></use>
@@ -39,7 +36,7 @@
   <nav class="navigation-mob">
     <ul class="navigation-mob__list list">
       <li class="nav-mob__item">
-        <a href="./index.html" class="nav-mob__link">Студія</a>
+        <a href="./index.html" class="nav-mob__link current-mobile">Студія</a>
       </li>
       <li class="nav-mob__item">
         <a href="./portfolio.html" class="nav-mob__link">Портфоліо</a>
@@ -52,16 +49,10 @@
 
   <div class="nav-mob__contacts">
     <div class="nav-mob__cont">
-      <a href="mailto:info@devstudio.com" class="nav-mob-tel">
-          <use href="./images/icons.svg#icon-message"></use></svg
-        >info@devstudio.com</a
-      >
+      <a href="mailto:info@devstudio.com" class="nav-mob-email">+38 096 111 11 11</a>
     </div>
     <div class="nav-mob__cont">
-      <a href="tel:+380961111111" class="nav-mob-email">
-          <use href="./images/icons.svg#icon-smartphone"></use></svg
-        >+38 096 111 11 11</a
-      >
+      <a href="tel:+380961111111" class="nav-mob-tel">info@devstudio.com</a>
     </div>
   </div>
   <div class="socials-mob">
@@ -109,33 +100,29 @@
         </nav>
         
         <div class="navigation__contacts">
-          <div class="navigation__cont">
-            <a href="mailto:info@devstudio.com" class="navigation__connect">
-              <svg class="navigation__icon contacts-icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-message"></use></svg
-              >info@devstudio.com</a>
-          </div>
-          <div class="navigation__cont">
-            <a href="tel:+380961111111" class="navigation__connect">
-              <svg class="navigation__icon contacts-icon" width="12" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use></svg
-              >+38 096 111 11 11</a>
-          </div>
+          <ul class="navigation__contacts-details">
+            <li class="navigation__cont list">
+              <a href="mailto:info@devstudio.com" class="navigation__connect">
+                <svg class="navigation__icon contacts-icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-message"></use></svg>info@devstudio.com</a>
+            </li>
+            <li class="navigation__cont list">
+              <a href="tel:+380961111111" class="navigation__connect">
+                <svg class="navigation__icon contacts-icon" width="12" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
     <main>
-      <!--Шапка-->
-
       
 
       <!--Герой-->
       <section class="hero">
         <div class="container hero__wrap hero-wrap">
           <h1 class="hero__item hero-item">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero__btn hero-btn" type="button" data-modal-open>
-            Замовити послугу
-          </button>
+          <button class="hero__btn hero-btn" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
 
@@ -153,25 +140,17 @@
               </div>
 
               <h3 class="features__name features-name">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="features__text">
-                Ідейні міркування, і навіть початок повсякденної роботи з
-                формування позиції.
-              </p>
+              <p class="features__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
             </li>
             <li class="features__item">
               <div class="features__img features-img img">
                 <svg class="features__icon" width="70" height="70">
-                  <use
-                    href="./images/icons.svg#icon-clock"
-                  ></use>
+                  <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
 
               <h3 class="features__name features-name">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="features__text">
-                Завдання організації, особливо рамки і місце навчання кадрів
-                тягне у себе.
-              </p>
+              <p class="features__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
             </li>
             <li class="features__item">
               <div class="features__img features-img img">
@@ -181,9 +160,7 @@
               </div>
 
               <h3 class="features__name features-name">ПЛАНУВАННЯ</h3>
-              <p class="features__text">
-                Так само консультація з широким активом значною мірою зумовлює.
-              </p>
+              <p class="features__text">Так само консультація з широким активом значною мірою зумовлює.</p>
             </li>
             <li class="features__item">
               <div class="features__img features-img img">
@@ -193,10 +170,7 @@
               </div>
 
               <h3 class="features__name features-name">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="features__text">
-                Значимість цих проблем настільки очевидна, що реалізація
-                планових завдань.
-              </p>
+              <p class="features__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
             </li>
           </ul>
         </div>
@@ -214,16 +188,14 @@
               srcset="
               ./images/activity-img1.jpg 1x, 
               ./images/activity-img1-2x.jpg 2x"
-              media="(min-width:1200px)"
-              />
-              </picture>
-              
+              media="(min-width:1200px)">
               <img
                 class="activity-img"
                 src="./images/1.jpg"
                 alt="Діяльність"
-                width="370"
-              />
+                width="370">
+              </picture>              
+              
               <p class="activity-list-above">Десктопні додатки</p>
             </li>
             <li class="activity-item">
@@ -232,16 +204,15 @@
               srcset="
               ./images/activity-img2.jpg 1x, 
               ./images/activity-img2-2x.jpg 2x"
-              media="(min-width:1200px)"
-              />
-              </picture>
-              
+              media="(min-width:1200px)">
               <img
                 class="activity-img"
                 src="./images/2.jpg"
                 alt="Діяльність"
-                width="370"
-              />
+                width="370">
+              </picture>
+              
+              
               <p class="activity-list-above">Мобільні додатки</p>
             </li>
             <li class="activity-item">
@@ -250,16 +221,14 @@
               srcset="
               ./images/activity-img3.jpg 1x, 
               ./images/activity-img3-2x.jpg 2x"
-              media="(min-width:1200px)"
-              />
-              </picture>
-              
+              media="(min-width:1200px)">
               <img
                 class="activity-img"
                 src="./images/3.jpg"
                 alt="Діяльність"
-                width="370"
-              />
+                width="370">
+              </picture>
+                            
               <p class="activity-list-above">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -289,13 +258,13 @@
                 ./images/team-img1-mob.jpg 1x,
                 ./images/team-img1-mob-2x.jpg 2x"
                 media="(max-width:480px)">
-              </picture>
-              <img
+                <img
                 class="card-img img"
                 src="./images/img1.jpg"
                 alt="Член команди"
-                width="270"
-              />
+                width="270">
+              </picture>
+              
               <div class="card-wrap">
                 <h3 class="card-name">Ігор Дем'яненко</h3>
                 <p class="card-text">Product Designer</p>
@@ -349,13 +318,13 @@
                 ./images/team-img2-mob.jpg 1x,
                 ./images/team-img2-mob-2x.jpg 2x"
                 media="(max-width:480px)">
-              </picture>
-              <img
+                <img
                 class="card-img img"
                 src="./images/img2.jpg"
                 alt="Член команди"
-                width="270"
-              />
+                width="270">
+              </picture>
+              
               <div class="card-wrap">
                 <h3 class="card-name">Ольга Рєпіна</h3>
                 <p class="card-text">Frontend Developer</p>
@@ -409,13 +378,13 @@
                 ./images/team-img3-mob.jpg 1x,
                 ./images/team-img3-mob-2x.jpg 2x"
                 media="(max-width:480px)">
-              </picture>
-              <img
+                <img
                 class="card-img img"
                 src="./images/img3.jpg"
                 alt="Член команди"
-                width="270"
-              />
+                width="270">
+              </picture>
+              
               <div class="card-wrap">
                 <h3 class="card-name">Микола Тарасов</h3>
                 <p class="card-text">Marketing</p>
@@ -469,13 +438,13 @@
                 ./images/team-img4-mob.jpg 1x,
                 ./images/team-img4-mob-2x.jpg 2x"
                 media="(max-width:480px)">
-              </picture>
-              <img
+                <img
                 class="card-img img"
                 src="./images/img4.jpg"
                 alt="Член команди"
-                width="270"
-              />
+                width="270">
+              </picture>
+              
               <div class="card-wrap">
                 <h3 class="card-name">Михайло Єрмаков</h3>
                 <p class="card-text">UI Designer</p>
@@ -520,8 +489,8 @@
     <!-- Постійні клієнти -->
 
     <section class="clients">
-      <h2 class="clients-title is-active">Постійні клієнти</h2>
       <div class="container">
+        <h2 class="clients-title is-active">Постійні клієнти</h2>
         <ul class="clients-list list">
           <li class="clients-member">
             <a href="" class="clients-link">
@@ -575,19 +544,15 @@
       <div class="container">
         <div class="logo-contacts">
           <div class="footer-logo">
-            <a class="logo header-logo header__logo--color-light" href=""
-              ><span class="accent">Web</span>Studio</a
-            >
+            <a class="logo header-logo header__logo--color-light" href="">
+              <span class="accent">Web</span>Studio</a>
             <address class="adress">м. Київ, пр-т Лесі Українки, 26</address>
             <ul class="contacts list">
               <li class="contacts-list">
-                <a class="footer-mail" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
+                <a class="footer-mail" href="mailto:info@example.com">info@example.com</a>
               </li>
               <li class="contacts-list">
-                <a class="footer-tel" href="tel:+380991111111"
-                  >+38 099 111 11 11</a>
+                <a class="footer-tel" href="tel:+380991111111">+38 099 111 11 11</a>
               </li>
             </ul>
           </div>
@@ -595,7 +560,7 @@
                         <!-- Приєднуйтесь -->
   
           <div class="footer-contacts">
-            <h3 class="social-title">Приєднуйтесь</h3>
+            <p class="social-title">Приєднуйтесь</p>
             <ul class="socials list">
               <li class="socials-item">
                 <a href="" class="socials-link socials-link-dark">
@@ -629,32 +594,28 @@
           </div>
         </div>
       
+      
 
       <!-- Підпишіться на розсилку -->
 
       
         <div class="footer-online">
-        <h3 class="title online-title">Підпишіться на розсилку</h3>
-        <div class="online-wrap">
+          <p class="title online-title">Підпишіться на розсилку</p>
           <form class="online-form">
         <input
               type="email"
               name="online-email"
               class="online-input"
-              placeholder="E-mail"
-            />
+              placeholder="E-mail">
 
             <button type="submit" class="online-btn">Підписатися
               <svg class="online-link-img" width="24" height="24">
                 <use href="./images/icons.svg#icon-icon-send"></use>
               </svg>
-            </button>
-
-      </form>
-        </div>
-      
+            </button>   
+          </form>
       </div>
-
+      </div>
     </footer>
     
     <div class="backdrop is-hidden" data-modal>
@@ -675,8 +636,7 @@
               class="form-input"
               required
               name="user-name"
-              id="user-name"
-            />
+              id="user-name"/>
             <svg class="input-icon" width="18" height="18">
               <use href="./images/icons.svg#icon-person-black"></use>
             </svg>
@@ -689,8 +649,7 @@
               type="tel"
               class="form-input"
               name="user-tel"
-              id="user-tel"
-            />
+              id="user-tel"/>
             <svg class="input-icon" width="18" height="18">
               <use href="./images/icons.svg#icon-phone-black"></use>
             </svg>
@@ -705,8 +664,7 @@
               class="form-input"
               required
               name="user-email"
-              id="user-email"
-            />
+              id="user-email">
             <svg class="input-icon" width="18" height="18">
               <use href="./images/icons.svg#icon-email-black"></use>
             </svg>
@@ -719,8 +677,8 @@
               name="user-commen"
               id="user-comment"
               placeholder="Введіть текст"
-              class="modal-text"
-            ></textarea>
+              class="modal-text">
+            </textarea>
           </div>
 
           <div class="checkbox">
@@ -736,6 +694,7 @@
             </svg>
               </span>Погоджуюся з розсилкою та приймаю<a href="" class="checkbox-text-link">Умови договору</a></label>
           </div>
+        </div>
 
           <div class="button-send">
             <button type="submit" class="send">Відправити</button>

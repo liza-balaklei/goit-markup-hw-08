@@ -4,6 +4,10 @@
   
     background-color: var(--title-bcg-color);
     &-logo {
+      margin-bottom: 60px;
+      @include tablet {
+        margin-bottom: 0;
+      }
       @include desktop-max {
         display: flex;
         flex-direction: column;
@@ -31,17 +35,16 @@
     font-size: 14px;
     line-height: 1.7;
     margin-top: 28px;
+    margin-bottom: 12px;
   }
 
   .contacts {
-    margin-top: 0;
-    margin-bottom: 60px;
-    // display: block;
+    margin: 0;
     @include desktop {
       margin-right: 94px;
     }
-    &-list {
-      margin-top: 12px;
+    &-list:not(:last-child) {
+      margin-bottom: 12px;
     }
   }
 
