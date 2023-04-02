@@ -503,9 +503,11 @@ h2 {
 
 .portfolio-item {
   width: 100%;
-  margin-bottom: 30px;
   border: 1px solid #eeeeee;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio-item {
@@ -968,9 +970,11 @@ h2 {
 
 .portfolio-item {
   width: 100%;
-  margin-bottom: 30px;
   border: 1px solid #eeeeee;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio-item {
@@ -1160,7 +1164,6 @@ h2 {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-img {
-  display: flex;
   cursor: pointer;
 }
 .modal-close:focus, .modal-close:hover {
